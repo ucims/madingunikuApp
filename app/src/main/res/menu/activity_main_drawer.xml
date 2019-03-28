@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_jadwal"
+            android:icon="@drawable/ic_date"
+            android:title="Kalender Akademi" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_map"
+            android:title="Denah ruangan" />
+    </group>
+
+    <item android:title="Other">
+        <menu>
+            <item
+                android:id="@+id/nav_user"
+                android:icon="@drawable/ic_person"
+                android:title="User" />
+            <item
+                android:id="@+id/nav_tentang"
+                android:icon="@drawable/ic_live"
+                android:title="Tentang" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit"
+                android:title="Exit" />
+        </menu>
+    </item>
+
+</menu>

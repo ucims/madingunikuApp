@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<android.support.v7.widget.CardView
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_marginBottom="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp">
+
+    <LinearLayout
+        android:id="@+id/cv_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rel_item_movie"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:padding="8dp">
+
+
+            <TextView
+                android:id="@+id/textViewPostJudul"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:text="Judul" />
+
+            <View
+                android:id="@+id/div1"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewPostJudul"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:background="#bbb" />
+
+            <ImageView
+                android:id="@+id/imageViewPost"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="37dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="RtlHardcoded"
+                tools:src="@color/colorAccent" />
+
+
+            <ImageView
+                android:id="@+id/imageViewPost2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="37dp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="RtlHardcoded"
+                tools:src="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/textViewPostKeterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/btnLihat"
+                android:maxLength="150"
+                tools:text="Keterangan" />
+
+            <View
+                android:id="@+id/div"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textViewPostKeterangan"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:background="#bbb" />
+
+            <TextView
+                android:id="@+id/textViewPostTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/div"
+                android:maxLength="150"
+                android:gravity="right"
+                android:paddingTop="5dp"
+                tools:text="Tanggal" />
+
+            <Button
+                android:id="@+id/btnDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewPost"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_toEndOf="@+id/btnLihat"
+                android:layout_toRightOf="@+id/btnLihat"
+                android:gravity="right"
+                android:text="Download" />
+
+            <Button
+                android:id="@+id/btnLihat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewPost"
+                android:layout_centerHorizontal="true"
+                android:gravity="right"
+                android:text="Lihat PDF" />
+
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+</LinearLayout>

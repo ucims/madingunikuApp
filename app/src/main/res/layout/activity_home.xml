@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.madinguniku.fkom.madun.HomeActivity"
+    android:id="@+id/swipeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <WebView
+            android:id="@+id/webViewMhs"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+
+    </LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+
+

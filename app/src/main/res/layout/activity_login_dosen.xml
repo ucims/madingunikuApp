@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDosen"
+    tools:context="com.madinguniku.fkom.madun.LoginDosenActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="80dp">
+
+        <EditText
+            android:id="@+id/username_dosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="textPersonName"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/password_dosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btn_Login_Dosen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="8dp"
+        android:text="Login"
+        />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Mahasiswa ?"
+            />
+
+        <Button
+            android:id="@+id/btnLoginMhs"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="73dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorTextWhite"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textAllCaps="false"
+            android:text="Login Mahasiswa"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Belum punya akun ?"
+            />
+
+        <Button
+            android:id="@+id/btn_Daftar"
+            android:layout_width="130dp"
+            android:layout_height="30dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="12sp"
+            android:textAllCaps="false"
+            android:background="@color/colorTextWhite"
+            android:text="Daftar"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
